@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur la Tunisie</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">
+        <span id="themeIcon">🌙</span>
+        <span id="themeText">Mode sombre</span>
+    </button>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="lieux.html">Lieux à découvrir</a></li>
+                <li class="quiz"><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Quiz</h1>
+    
+    <main>
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <h2 id="question-title">Question</h2>
+                <div class="score-counter">
+                    Score: <span id="score">0</span>/<span id="total-questions">0</span>
+                </div>
+            </div>
+            
+            <div class="question-container">
+                <div id="question-text">Chargement de la question...</div>
+                <div class="options-container" id="options-container"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
